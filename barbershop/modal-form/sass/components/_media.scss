@@ -1,0 +1,36 @@
+.media-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  
+    transform-origin: top left;
+    transform: rotate(-90deg) translateY(26px);
+
+    &::before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 60px;
+        background-color: var(--main-txt-cl);
+      }
+  }
+  
+  
+  .media-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+    color: #303030;
+  
+    transition: color var(--trns-fast);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-txt-cl);
+    }
+  }
+  
+
+  

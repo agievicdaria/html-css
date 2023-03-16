@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best barbershop in the world" />
+    <title>BarberShop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <!-- <header class="header" data-header>
+      <div class="header__container container">
+        <a class="header__logo logo" href="" aria-label="BarberSop logo">
+          <svg class="logo__img" width="68" height="56">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav header__nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current link" href="#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#price">Services and prices</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#team">Barbers</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__group">
+          <a class="header__contact link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="btn btn--theme-dark" type="button" data-modal-open>
+            <span class="btn-txt">Online-booking</span>
+          </button>
+        </div>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+      </div>
+    </header> -->
+    <!-- Main section -->
+    <main>
+      <!-- Hero section -->
+      <!-- <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__left-side">
+            <ul class="hero__media-list media-list list">
+              <li class="media-list__item">
+                <a class="media-list__link link" href="">Instagram</a>
+              </li>
+              <li class="media-list__item">
+                <a class="media-list__link link" href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__right-side">
+            <p class="hero__uppertitle uppertitle uppertitle--theme-dark">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="main-title">BarberShop</h1>
+            <p class="hero__undertitle undertitle undertitle--theme-dark">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
+          <ul class="slider-pagination list">
+            <li
+              class="slider-pagination__item active slider-pagination__item--active"
+            ></li>
+            <li class="slider-pagination__item"></li>
+            <li class="slider-pagination__item"></li>
+          </ul>
+          <ul class="slider-controls list">
+            <li class="slider-controls__item">
+              <button
+                class="slider-controls__btn slider-controls__btn--disable"
+                type="button"
+              >
+                Back
+              </button>
+            </li>
+            <li class="slider-controls__item">
+              <button class="slider-controls__btn" type="button">
+                Forward
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- About section -->
+      <!-- <section class="about" id="about">
+        <div class="about__container container">
+          <ul class="about-list list">
+            <li class="about-list__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/img-1_lg@1x.jpg 1x,
+                    ./images/about/img-1_lg@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/img-1_md@1x.jpg 1x,
+                    ./images/about/img-1_md@2x.jpg 2x
+                  "
+                />
+ 
+                <img
+                  class="about-list__img"
+                  src="./images/about/img-1_md@1x.jpg"
+                  alt="Beard shaving"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+
+            <li class="about-list__item">
+              <img
+                class="about-list__img"
+                src="./images/about/img-2.jpg"
+                alt="Haircut"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <div class="about__right-side">
+            <p class="uppertitle">About</p>
+            <h2 class="title">Best Barbershop in your city</h2>
+            <p class="undertitle">
+              If you want to add more confidence to your image, you&nbsp;should
+              definitely visit us.
+            </p>
+            <p class="about__desc">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="btn" type="button">online-booking</button>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Price section -->
+      <!-- <section class="price" id="price">
+        <div class="container">
+          <p class="uppertitle uppertitle--theme-dark">spend your time with the best masters</p>
+          <h2 class="title title--theme-dark">Services and prices</h2>
+          <div class="price-block">
+            <ul class="price-list list">
+              <li class="price-list__item">
+                <span class="price-list__service">Men’s haircut</span> from 300 uah.
+              </li>
+              <li class="price-list__item">
+                <span class="price-list__service">Beard trim</span> from 300 uah.
+              </li>
+              <li class="price-list__item">
+                <span class="price-list__service">Mustache trim</span> from 200 uah.
+              </li>
+              <li class="price-list__item">
+                <span class="price-list__service">Straight razor shave</span> from 200 uah.
+              </li>
+            </ul>
+            <ul class="price-list list">
+              <li class="price-list__item">
+                <span class="price-list__service">Trainee’s haircut</span> from 50 uah.
+              </li>
+              <li class="price-list__item">
+                <span class="price-list__service">Haircut under the nozzle</span> from 200 uah.
+              </li>
+              <li class="price-list__item">
+                <span class="price-list__service">Children’s haircut (0-12 y.o.)</span> from 300 uah.
+              </li>
+              <li class="price-list__item">
+                <span class="price-list__service">Camouflage of gray hair</span> from 200 uah.
+              </li>
+            </ul>
+          </div>
+          <button class="price__btn btn btn--theme-dark" type="button">online-booking</button>
+        </div>
+      </section> -->
+
+      <!-- Benefits section -->
+      <!-- <section class="benefits">
+        <div class="container">
+          <ul class="benefits-list list">
+            <li class="benefits-list__item">
+              <p class="benefits-list__quantity">600 <sup class="benefits-list__decor">+</sup></p>
+              <p class="benefits-list__text">Satisfied customers per day</p>
+            </li>
+            <li class="benefits-list__item">
+              <p class="benefits-list__quantity">50 <sup class="benefits-list__decor">+</sup></p>
+              <p class="benefits-list__text">Awards for excellent service</p>
+            </li>
+            <li class="benefits-list__item">
+              <p class="benefits-list__quantity">20 <sup class="benefits-list__decor">+</sup></p>
+              <p class="benefits-list__text">Kyiv’s best barbers</p>
+            </li>
+            <li class="benefits-list__item">
+              <p class="benefits-list__quantity">100 <sup class="benefits-list__decor">+</sup></p>
+              <p class="benefits-list__text">Gifts for regular customers</p>
+            </li>
+          </ul>
+          <div>
+            <p class="uppertitle">old traditional school</p>
+            <h2 class="title">Why people come to us?</h2>
+            <p class="undertitle">
+              Only good things are said about us. But it's better to see and feel 1 time than read
+              10 times.
+            </p>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Team section -->
+      <!-- <section class="team" id="team">
+        <div class="container">
+          <p class="uppertitle">for true enjoyers of the atmosphere</p>
+          <h2 class="title">Our barbers</h2>
+          <ul class="team-list list">
+            <li class="team-list__item">
+              <div class="team-list__thumb">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/img1_lg@1x.jpg 1x,
+                      ./images/team/img1_lg@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 678px)"
+                    srcset="
+                      ./images/team/img1_md@1x.jpg 1x,
+                      ./images/team/img1_md@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/team/img1_sm@1x.jpg 1x,
+                      ./images/team/img1_sm@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="team-list__avatar"
+                    src="./images/team/team-1.jpg"
+                    alt="John Smith"
+                    width="450"
+                    height="346"
+                  />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet facilis accusantium eaque ab, aut eligendi adipisci.
+                    At assumenda fugit eum!
+                  </p>
+                </div>
+              </div>
+              <div class="team-wrapper">
+                <h3 class="team-wrapper__name">John Smith</h3>
+                <p class="team-wrapper__position">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      aria-label="Instagram icon"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://twitter.com"
+                      aria-label="Twitter icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://facebook.com"
+                      aria-label="Facebook icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://linkedin.com"
+                      aria-label="LinkedIn icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-list__item">
+              <div class="team-list__thumb">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/img2_lg@1x.jpg 1x,
+                      ./images/team/img2_lg@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 678px)"
+                    srcset="
+                      ./images/team/img2_md@1x.jpg 1x,
+                      ./images/team/img2_md@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/team/img2_sm@1x.jpg 1x,
+                      ./images/team/img2_sm@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="team-list__avatar"
+                    src="./images/team/team-2.jpg"
+                    alt="Michele Doe"
+                    width="450"
+                    height="346"
+                  />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet facilis accusantium eaque ab, aut eligendi adipisci.
+                    At assumenda fugit eum!
+                  </p>
+                </div>
+              </div>
+              <div class="team-wrapper">
+                <h3 class="team-wrapper__name">John Smith</h3>
+                <p class="team-wrapper__position">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      aria-label="Instagram icon"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://twitter.com"
+                      aria-label="Twitter icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://facebook.com"
+                      aria-label="Facebook icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://linkedin.com"
+                      aria-label="LinkedIn icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-list__item">
+              <div class="team-list__thumb">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/img3_lg@1x.jpg 1x,
+                      ./images/team/img3_lg@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 678px)"
+                    srcset="
+                      ./images/team/img3_md@1x.jpg 1x,
+                      ./images/team/img3_md@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/team/img3_sm@1x.jpg 1x,
+                      ./images/team/img3_sm@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="team-list__avatar"
+                    src="./images/team/team-3.jpg"
+                    alt="Alan Black"
+                    width="450"
+                    height="346"
+                  />
+                </picture>
+                <div class="overlay">
+                  <p class="overlay__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet facilis accusantium eaque ab, aut eligendi adipisci.
+                    At assumenda fugit eum!
+                  </p>
+                </div>
+              </div>
+              <div class="team-wrapper">
+                <h3 class="team-wrapper__name">John Smith</h3>
+                <p class="team-wrapper__position">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      aria-label="Instagram icon"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://twitter.com"
+                      aria-label="Twitter icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://facebook.com"
+                      aria-label="Facebook icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a
+                      class="socials__link link"
+                      href="https://linkedin.com"
+                      aria-label="LinkedIn icon"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- Gallery section -->
+      <section class="gallery">
+        <div class="container">
+          <p class="gallery__uppertitle uppertitle">
+            in Latin, "barba" means "beard"
+          </p>
+          <h2 class="visually-hidden">Our gallery</h2>
+          <ul class="gallery-list list">
+            <li class="gallery-list__item">
+              <!-- <img
+                class="gallery-list__item"
+                srcset="./images/gallery/x/img-1@1x.png 1x, ./images/gallery/x/img-1@2x.png 2x"
+                src="./images/gallery/x/img-1@1x.png"
+                alt="gallery"
+                width="270"
+                height="360"
+              /> -->
+
+              <img
+                class="gallery-list__item"
+                srcset="
+                  ./images/gallery/img-1_270.jpg 270w,
+                  ./images/gallery/img-1_330.jpg 330w,
+                  ./images/gallery/img-1_418.jpg 418w,
+                  ./images/gallery/img-1_330.jpg 540w,
+                  ./images/gallery/img-1_330.jpg 660w,
+                  ./images/gallery/img-1_330.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 678px) 330px, (min-width: 480px) 418px, 100vw"
+                src="./images/gallery/img-1_418.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+                loading="lazy"
+              />
+            </li>
+            <li class="gallery-list__item">
+              <img
+                class="gallery-list__item"
+                srcset="
+                  ./images/gallery/img-2_270.jpg 270w,
+                  ./images/gallery/img-2_330.jpg 330w,
+                  ./images/gallery/img-2_418.jpg 418w,
+                  ./images/gallery/img-2_330.jpg 540w,
+                  ./images/gallery/img-2_330.jpg 660w,
+                  ./images/gallery/img-2_330.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 678px) 330px, (min-width: 480px) 418px, 100vw"
+                src="./images/gallery/img-1_418.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+                loading="lazy"
+              />
+            </li>
+            <li class="gallery-list__item">
+              <img
+                class="gallery-list__item"
+                srcset="
+                  ./images/gallery/img-3_270.jpg 270w,
+                  ./images/gallery/img-3_330.jpg 330w,
+                  ./images/gallery/img-3_418.jpg 418w,
+                  ./images/gallery/img-3_330.jpg 540w,
+                  ./images/gallery/img-3_330.jpg 660w,
+                  ./images/gallery/img-3_330.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 678px) 330px, (min-width: 480px) 418px, 100vw"
+                src="./images/gallery/img-1_418.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+                loading="lazy"
+              />
+            </li>
+            <li class="gallery-list__item">
+              <img
+                class="gallery-list__item"
+                srcset="
+                  ./images/gallery/img-4_270.jpg 270w,
+                  ./images/gallery/img-4_330.jpg 330w,
+                  ./images/gallery/img-4_418.jpg 418w,
+                  ./images/gallery/img-4_330.jpg 540w,
+                  ./images/gallery/img-4_330.jpg 660w,
+                  ./images/gallery/img-4_330.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 678px) 330px, (min-width: 480px) 418px, 100vw"
+                src="./images/gallery/img-1_418.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Booking & Contatcs sections -->
+      <!-- <div class="contatcs-group">
+        <div class="contatcs-group__container container">
+          <section class="booking section">
+            <h2 class="title title--theme-dark">Online-booking</h2>
+            <form class="booking-form" name="booking_form">
+              <div class="booking-form__group">
+                <label class="booking-form__field">
+                  <input
+                    class="booking-form__input"
+                    type="text"
+                    name="user_name"
+                    placeholder="Antony Black"
+                    required
+                    minlength="2"
+                  />
+                  <span class="booking-form__label">name*</span>
+                </label>
+                <label class="booking-form__field">
+                  <input
+                    class="booking-form__input"
+                    type="tel"
+                    name="user_phone"
+                    placeholder="+38 (099) 123 45 67"
+                    required
+                    minlenght="12"
+                    maxlength="12"
+                  />
+                  <span class="booking-form__label">phone*</span>
+                </label>
+              </div>
+
+              <label class="booking-form__message">
+                <textarea
+                  class="booking-form__textarea"
+                  name="user_message"
+                  rows="5"
+                  placeholder="Type your message..."
+                ></textarea>
+                <span class="booking-form__label">message</span>
+              </label>
+
+              <button class="contatcs__btn btn btn--theme-dark" type="submit" disabled>send</button>
+            </form>
+          </section>
+          <section class="contacts section" id="contacts">
+            <h2 class="title title--theme-dark">Contacts</h2>
+            <address class="contacts__address">
+              <ul class="contacts-list list">
+                <li class="contacts-list__item">
+                  <a
+                    class="contacts-list__link link"
+                    href="https://goo.gl/maps/UgYU75aT7GZat5ea9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="contacts-list__icon contacts-list__icon--top" width="24" height="24">
+                      <use href="./images/icons.svg#map-pin"></use>
+                    </svg>
+                    <span class="contacts-list__text">
+                      st. Vasilkovaya, 7A <br />
+                      Kiev, 08132s
+                    </span>
+                  </a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link link" href="tel:+380441111111">
+                    <svg class="contacts-list__icon" width="24" height="24">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <span class="contacts-list__text"> +38 044 111 11 11 </span>
+                  </a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link link" href="mailto:barbershop@email.com">
+                    <svg class="contacts-list__icon" width="24" height="24">
+                      <use href="./images/icons.svg#mail"></use>
+                    </svg>
+                    <span class="contacts-list__text"> barbershop@email.com </span>
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div>
+              <p class="contacts__uppertitle">working hours</p>
+              <p class="contacts__schedule">
+                Every day from <time datetime="09:00">9:00</time> to
+                <time datetime="22:00">22:00</time>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div> -->
+    </main>
+    <!-- Footer section -->
+    <!-- <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__copyright">&#169; Copyright 2020</p>
+        <ul class="media-list list">
+          <li class="media-list__item">
+            <a class="media-list__link footer__media-link link" href="">Instagram</a>
+          </li>
+          <li class="media-list__item">
+            <a class="media-list__link footer__media-link link" href="">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </footer> -->
+
+    <!-- modal window -->
+    <!-- <div class="backdrop backdrop--is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close-btn" type="button" data-modal-close>
+          <svg class="modal__close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Leave your details, we will contact soon</p>
+        <form class="modal-form">
+          <div class="modal-form__group">
+            <label class="modal-form__field">
+              <span class="modal-form__thumb">
+                <svg class="modal-form__pic" width="20" height="20">
+                  <use href="./images/icons.svg#user-id"></use>
+                </svg>
+              </span>
+              <input
+                class="modal-form__input"
+                type="text"
+                name="user_name"
+                placeholder="John Doe"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                required
+              />
+              <span class="modal-form__label">Name</span>
+              <span class="modal-form__info">User name must be two words separated by space.</span>
+              <svg class="modal-form__icon" width="24" height="24">
+                <use class="modal-form__warning" href="./images/icons.svg#warning"></use>
+                <use class="modal-form__success" href="./images/icons.svg#success"></use>
+              </svg>
+            </label>
+            <label class="modal-form__field">
+              <span class="modal-form__thumb">
+                <svg class="modal-form__pic" width="20" height="20">
+                  <use href="./images/icons.svg#user-mail"></use>
+                </svg>
+              </span>
+              <input
+                class="modal-form__input"
+                type="email"
+                name="user_mail"
+                placeholder="example@mail.com"
+                required
+              />
+              <span class="modal-form__label">Email</span>
+              <span class="modal-form__info">Please provide a valid email</span>
+              <svg class="modal-form__icon" width="24" height="24">
+                <use class="modal-form__warning" href="./images/icons.svg#warning"></use>
+                <use class="modal-form__success" href="./images/icons.svg#success"></use>
+              </svg>
+            </label>
+            <label class="modal-form__field">
+              <span class="modal-form__thumb">
+                <svg class="modal-form__pic" width="20" height="20">
+                  <use href="./images/icons.svg#user-mobile"></use>
+                </svg>
+              </span>
+              <input
+                class="modal-form__input"
+                type="tel"
+                name="user_phone"
+                placeholder="+38 (099) 123-45-67 "
+              />
+              <span class="modal-form__label">Phone</span>
+            </label>
+
+            <label class="modal-form__field" data-message>
+              <textarea
+                class="modal-form__message"
+                name="user_message"
+                rows="5"
+                placeholder="&nbsp;"
+              ></textarea>
+              <span class="modal-form__label">Comment</span>
+            </label>
+          </div>
+          <div class="modal-form__group">
+            <label class="payment" data-payment>
+              <input
+                class="payment__input visually-hidden"
+                type="radio"
+                name="payment"
+                value="user-mastercard"
+                checked
+              />
+              <svg class="payment__icon" width="40" height="30">
+                <use href="./images/icons.svg#user-mc"></use>
+              </svg>
+              <span class="payment__title">
+                Visa ending in 4321
+                <span class="payment__text-muted">Expires 9/2024</span>
+              </span>
+            </label>
+            <label class="payment" data-payment>
+              <input
+                class="payment__input visually-hidden"
+                type="radio"
+                name="payment"
+                value="user-visa"
+              />
+              <svg class="payment__icon" width="40" height="30">
+                <use href="./images/icons.svg#user-visa"></use>
+              </svg>
+              <span class="payment__title">
+                Mastercard ending in 1234
+                <span class="payment__text-muted">Expires 7/2025</span>
+              </span>
+            </label>
+          </div>
+          <label class="form-agreement">
+            <input
+              class="form-agreement__checkbox visually-hidden"
+              type="checkbox"
+              name="agreement-checkbox"
+              checked
+            />
+            <svg class="form-agreement__icon" width="18" height="18">
+              <use class="form-agreement__unchecked" href="./images/icons.svg#icon-uncheck"></use>
+              <use class="form-agreement__checked" href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <span class="form-agreement__text">
+              Agree to
+              <a class="form-agreement__link link" href="">terms and conditions</a>
+            </span>
+          </label>
+          <button class="form__btn btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div> -->
+
+    <!-- Mobile menu -->
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div> -->
+
+    <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>

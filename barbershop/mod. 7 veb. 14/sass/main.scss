@@ -1,0 +1,21 @@
+// utils
+@import './utils/variables';
+@import './utils/animation';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// components
+@import './components/section';
+@import './components/container';
+@import './components/typography';
+@import './components/buttons';
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/media';
+
+body {
+    background-color: teal;
+}

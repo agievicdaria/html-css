@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height: 190px;
+  width: calc(50% - 20px);
+  margin: 10px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.box:nth-child(1) {
+  background-color: yellowgreen;
+
+  background-image: url("../img/cat.png");
+
+  background-repeat: no-repeat;
+  background-position: 20px 20px; /*(x; y) */
+  /* background-position: 30% 30%; */
+  /* background-position: center; */
+  /* background-position: bottom 20px right 20px; */
+
+  background-size: 150px;
+  /* background-size: cover / contain; */
+  /* background-size: auto; */
+  /* background-size: 50%; */
+}
+
+.box:nth-child(2) {
+  background-color: bisque;
+  background-image: url("../img/bird.png");
+  background-repeat: repeat-x;
+  background-size: 100px;
+}
+
+.box:nth-child(3) {
+  background-color: orange;
+  background-image: url("../img/dog.png");
+  background-repeat: repeat-y;
+}
+
+.box:nth-child(4) {
+  background-color: teal;
+  background-image: url("../img/turtle.png");
+  /* background-repeat: repeat; */
+}
+
+/* Overlay */
+.overlay {
+  max-width: 1600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.2),
+      rgba(0, 255, 0, 0.2)
+    ),
+    url("../img/fish.jpeg");
+}

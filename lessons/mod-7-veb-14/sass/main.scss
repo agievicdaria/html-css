@@ -1,0 +1,64 @@
+// @import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+// @import './base/normalize';
+// @import './components/page-header';
+// @import './components/logo'
+
+// placeholders
+.notification-error {
+    @extend %notification;
+    background-color: red;
+}
+
+.notification-success {
+    @extend %notification;
+    background-color: green;
+}
+
+.features {
+    @extend %list;
+}
+
+
+// mixin
+
+// p {
+//     @include bordered(blue);
+// }
+
+// ul {
+//     @include bordered($type: dashed);
+// }
+
+// %centeredFlex {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// p {
+//     @extend %centeredFlex;
+// }
+
+// ul {
+//     @extend %centeredFlex;
+// }
+
+
+
+// p {
+//     @include centeredFlex();
+// }
+
+// button {
+//     @include centeredFlex(inline-flex);
+// }
+
+
+// each
+$socialIcons: "facebook", "github", "linkedin", "twitter"; 
+$techIcons: "html", "css", "js";
+
+@include generateIcons($socialIcons);
+@include generateIcons($techIcons);

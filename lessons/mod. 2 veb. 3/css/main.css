@@ -1,0 +1,99 @@
+/* Text link */
+/* .test-link {
+  color: black;
+}
+
+.test-link:hover,
+.test-link:focus {
+  color: rgb(0, 0, 255, 0.5);
+}
+
+.test-link:active {
+  color: #ff0000;
+} */
+/* /Text link */
+
+/* цвет основного текста #000000 */
+
+/* вторичный цвет текста rgba(0, 0, 0, 0.8) */
+
+/* белый #ffffff */
+
+/* акцент #18A0FB */
+
+/* вторичный цвет фона #F5F5F5 */
+
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-color: #18a0fb;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: #fff;
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--title-text-color);
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.site-nav .link {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Features */
+
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/* Examples */
+
+.work-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}

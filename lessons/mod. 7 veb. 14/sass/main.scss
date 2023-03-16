@@ -1,0 +1,82 @@
+@import './variables';
+@import './base/normalize'
+
+p {
+    background-color: $bg-color;
+    color: $accent-color;
+}
+
+
+// $color: lightblue;
+// $main-width: 100px;
+
+// body {
+//     background-color: $color;
+//     width: $main-width;
+// }
+
+// .section {
+//     color: orange;
+
+//    &__title {
+//        color: green;
+
+//        &--red {
+//         color: red;
+//     }
+//    }
+
+//    &__text {
+//        color: purple;
+
+       
+//    }
+// }
+
+// .section {
+//     color: orange;
+
+//     &:hover {
+//         color: blue;
+//     }
+// }
+
+// .section__title {
+//     color: purple;
+
+//     &:hover {
+//         color: green;
+//     }
+
+//     &--red {
+//         color: red;
+//     }
+// }
+
+// Button
+// .box {
+//     background-color: red;
+
+// }
+
+// .button {
+//     background-color: teal;
+
+//     &:hover, &:focus {
+//         color: #fff;
+//     }
+
+//     .box:hover & {
+//         background-color: orange;
+//     }
+// }
+
+// list
+// .list-item {
+//     background-color: red;
+
+//     &:nth-child(3) {
+//         background-color: blue;
+//     }
+// }
+

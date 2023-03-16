@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="form js-speaker-form" autocomplete="off">
+      <!-- user -->
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="James Green"
+          autofocus
+          autocomplete="on"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="tel">Phone</label>
+        <input type="tel" name="tel" id="tel" placeholder="+38**********" />
+      </div>
+
+      <div class="form-field">
+        <label for="mail">Mail</label>
+        <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+      </div>
+
+      <!-- checkbox -->
+      <div role="group" class="group">
+        <h2 class="group-title">Topic of the report</h2>
+        <ul class="topic-options">
+          <li>
+            <input
+              type="checkbox"
+              name="topic"
+              value="html"
+              id="html"
+              checked
+            />
+            <label for="html">html</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="topic" value="css" id="css" checked />
+            <label for="css">css</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="topic" value="js" id="js" />
+            <label for="js">js</label>
+          </li>
+        </ul>
+      </div>
+
+      <!-- radio buttons -->
+      <div role="group" class="group">
+        <h2 class="group-title">Your level of expertise</h2>
+        <ul class="experience-options">
+          <li>
+            <input
+              type="radio"
+              name="experience"
+              value="junior"
+              id="junior"
+              checked
+            />
+            <label for="">junior</label>
+          </li>
+
+          <li>
+            <input type="radio" name="experience" value="middle" id="middle" />
+            <label for="">middle</label>
+          </li>
+
+          <li>
+            <input type="radio" name="experience" value="senior" id="senior" />
+            <label for="">senior</label>
+          </li>
+        </ul>
+      </div>
+
+      <!-- date -->
+      <!-- <input type="date" name="" id="" /> -->
+      <!-- <input type="time" name="" id="" /> -->
+      <div class="form-field">
+        <label for="date">Date</label>
+        <input
+          class="date"
+          type="datetime-local"
+          name="date"
+          id="date"
+          min="2020-04-12T10:00"
+          max="2020-04-15T17:30"
+        />
+      </div>
+
+      <!-- download -->
+      <div class="form-field">
+        <label for="pdf">download your copy in pdf</label>
+        <input type="file" name="pdf" id="pdf" />
+      </div>
+
+      <!-- textarea -->
+      <div class="form-field">
+        <label for="comment">Your comment</label>
+        <textarea
+          class="comment"
+          name="comment"
+          id="comment"
+          rows="8"
+          placeholder="comment"
+        ></textarea>
+      </div>
+
+      <!-- agreement -->
+      <div class="form-field">
+        <input type="checkbox" name="policy" id="policy" />
+        <label for="policy">agree with all</label>
+      </div>
+
+      <!-- button -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+  </body>
+</html>
